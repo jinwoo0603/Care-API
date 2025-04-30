@@ -5,8 +5,6 @@ from jose.exceptions import ExpiredSignatureError, JWTError
 from datetime import datetime, timedelta, timezone
 from dotenv import load_dotenv
 
-load_dotenv()
-
 SECRET_KEY = os.getenv('JWT_KEY')
 ALG = "HS256"
 
